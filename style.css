@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'valo font';
+    src: url(./font/font/nclneovibes-demo-webfont.woff) format('woff'),
+         url(./font/font/nclneovibes-demo-webfont.woff2) format('woff2');
+    font-family: 'valo font2';
+    src: url(./font/font2/VALORANT-Regular.woff) format('woff'),
+         url(./font/font2/VALORANT-Regular.woff2) format('woff2');
+}
+
+.header {
+    height: 100px;
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 24px;
+}
+
+.header .left,
+.header .right {
+    height: 100%;
+}
+
+.header .left {
+    width: 60%;
+}
+
+.header .right {
+    width: 40%;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header .left ul {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.header .right ul {
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 24px;
+}
+
+.header li {
+    font-family: 'valo font2';
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.header li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.header .left li a h1.logo {
+    width: 90px;
+}
+
+.header li a img {
+    display: block;
+    width: 100%;
+}
+
+.header .right li h1 {
+    width: 30px;
+}
+
+.header .right .button {
+    background-color: #ff4349;
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bgVideo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+/* .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */
+ * { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+} 
+ 
+body { 
+    font-family: Arial, sans-serif; 
+} 
+ 
+/* .video-container { 
+    position: relative; 
+    height: 100vh;
+    overflow: hidden;
+}  */
+ 
+#background-video { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    z-index: -1; /* Send video behind content */ 
+    transform: translate(-50%, -50%); /* Centering */ 
+} 
+ 
+.overlay-content { 
+    position: relative; 
+    z-index: 1; /* Bring content above the video */ 
+    color: white; /* Text color */ 
+    text-align: center; /* Center text */ 
+}
+/* #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
